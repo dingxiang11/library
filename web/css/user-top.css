@@ -1,0 +1,23 @@
+#head {
+    background: #eeeeee;
+    height: 80px;
+}
+#logout {
+    position: absolute;
+    font-size: 20px;
+    top: 40px;
+    right: 20px;
+}
+#welcome {
+    position: absolute;
+    font-size: 20px;
+    left: 900px;
+    top: 40px;
+}
+#sysname {
+    position: absolute;
+    text-decoration: none;
+    font-size: 60px;
+    align: left;
+    left: 200px;
+}
