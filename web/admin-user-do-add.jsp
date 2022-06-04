@@ -13,7 +13,10 @@
     <title>处理新增用户</title>
 </head>
 <body>
+<%-- 头部 --%>
+<jsp:include page="top.jsp"/>
 <%
+
     request.setCharacterEncoding("UTF-8");
     User user = new User();
 

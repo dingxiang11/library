@@ -13,6 +13,10 @@
     <title>处理修改用户</title>
 </head>
 <body>
+
+<%-- 头部 --%>
+<jsp:include page="top.jsp"/>
+
 <%
     request.setCharacterEncoding("UTF-8");
     //获取admin-user-update.jsp页面提交的账号和密码

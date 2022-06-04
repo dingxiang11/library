@@ -8,32 +8,42 @@
   Time: 17:49
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
-    <title>查看图书</title>
+    <title>移出书架</title>
+    <style type="text/css">
+
+        body {
+            background-color: antiquewhite;
+        }
+
+
+    </style>
 </head>
 <body>
 
-<!--头部-->
-<jsp:include page="user-top.jsp"/>
+<%-- 头部 --%>
+<jsp:include page="top.jsp"/>
 
 <%
-    //设置获取注册时的编码为UTF-8
-    response.sendRedirect("UTF-8");
-    //获取userid
-    User user = (User) session.getAttribute("user");
+    // 设置获取注册时的编码为UTF-8
+    request.setCharacterEncoding("UTF-8");
+    // 获取userid
+    User user =(User)session.getAttribute("user");
     Integer userid = user.getUserid();
     //获取bookid
     Integer bookid = Integer.parseInt(request.getParameter("bookid"));
 
+
     //引入数据交互层
     BookShelfService bookShelfService = new BookShelfServiceImpl();
+
     boolean flag = bookShelfService.removeBookShelf(userid,bookid);
 
-    if (flag){
+    if (flag) {
         response.sendRedirect("user-bookshelf.jsp");
-    }else {
+    } else {
         response.sendRedirect("error.jsp");
     }
 %>

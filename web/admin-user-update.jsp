@@ -1,3 +1,7 @@
+<%@ page import="com.sjsq.po.User" %>
+<%@ page import="com.sjsq.service.UserService" %>
+<%@ page import="com.sjsq.service.impl.UserServiceImpl" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%--
   Created by IntelliJ IDEA.
   User: 86152
@@ -5,10 +9,6 @@
   Time: 0:59
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page import="com.sjsq.po.User" %>
-<%@ page import="com.sjsq.service.UserService" %>
-<%@ page import="com.sjsq.service.impl.UserServiceImpl" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,6 +40,8 @@
 
 <h1>修改用户</h1>
 <hr/>
+<%-- 头部 --%>
+<jsp:include page="top.jsp"/>
 <%
     //获取admin-user-home.jsp页面的userid
     Integer userid = Integer.parseInt(request.getParameter("userid"));

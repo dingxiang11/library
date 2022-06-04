@@ -21,7 +21,11 @@
     </style>
 </head>
 <body>
+<%-- 头部 --%>
+<jsp:include page="top.jsp"/>
 <%
+
+
     request.setCharacterEncoding("UTF-8");
 
     Integer bookid = Integer.parseInt(request.getParameter("bookid"));

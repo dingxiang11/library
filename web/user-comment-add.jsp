@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 86152
-  Date: 2022/6/3
-  Time: 1:02
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <%@ page import="com.sjsq.po.User" %>
 <%@ page import="com.sjsq.service.BookShelfService" %>
@@ -16,6 +9,13 @@
 <%@ page import="com.sjsq.service.CommentService" %>
 <%@ page import="com.sjsq.service.impl.CommentServiceImpl" %>
 <%@ page import="com.sjsq.po.Comment" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: 86152
+  Date: 2022/6/3
+  Time: 1:02
+  To change this template use File | Settings | File Templates.
+--%>
 <html>
 <head>
     <title>加入书架</title>
@@ -30,8 +30,11 @@
 </head>
 <body>
 
+<%-- 头部 --%>
+<jsp:include page="top.jsp"/>
 
 <%
+
     // 设置获取注册时的编码为UTF-8
     request.setCharacterEncoding("UTF-8");
 

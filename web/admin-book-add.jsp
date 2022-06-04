@@ -30,7 +30,8 @@
     </style>
 </head>
 <body>
-
+<%-- 头部 --%>
+<jsp:include page="top.jsp"/>
 
 <h1>新增图书</h1>
 <hr>
@@ -82,6 +83,7 @@
             addForm.price.focus();
             return false;
         }
+        alert('添加成功！');
         return true;
     }
 </script>

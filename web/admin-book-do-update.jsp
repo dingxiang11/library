@@ -13,7 +13,9 @@
     <title>处理修改图书</title>
 </head>
 <body>
+<jsp:include page="top.jsp"/>
 <%
+
     request.setCharacterEncoding("UTF-8");
     //获取admin-update-book.jsp页面提交的账号和密码
     Integer bookid = Integer.parseInt(request.getParameter("bookid"));

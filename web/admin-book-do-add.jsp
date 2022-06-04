@@ -31,6 +31,9 @@
     book.setCategoryid(categoryid);
     book.setBooklink(booklink);
 
+    System.out.println("添加的图书信息");
+    System.out.println(book);
+
     BookService bookService =new BookServiceImpl();
     boolean flag = bookService.addBook(book);
 

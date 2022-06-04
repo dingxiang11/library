@@ -36,7 +36,8 @@
     </style>
 </head>
 <body>
-
+<%-- 头部 --%>
+<jsp:include page="top.jsp"/>
 
 <h1>新增用户</h1>
 <hr>

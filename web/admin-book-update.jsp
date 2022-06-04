@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 86152
-  Date: 2022/6/2
-  Time: 23:19
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page import="com.sjsq.Dao.BookDao" %>
 <%@ page import="com.sjsq.Dao.impl.BookDaoImpl" %>
 <%@ page import="com.sjsq.po.Book" %>
@@ -13,6 +6,13 @@
 <%@ page import="com.sjsq.service.BookService" %>
 <%@ page import="com.sjsq.service.impl.BookServiceImpl" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: 86152
+  Date: 2022/6/2
+  Time: 23:19
+  To change this template use File | Settings | File Templates.
+--%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,7 +39,8 @@
     </style>
 </head>
 <body>
-
+<%-- 头部 --%>
+<jsp:include page="top.jsp"/>
 
 <h1>修改图书</h1>
 <hr/>
@@ -114,6 +115,7 @@
             updateForm.price.focus();
             return false;
         }
+        alert('修改成功！');
         return true;
     }
 </script>
